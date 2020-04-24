@@ -10,7 +10,7 @@
         <StackPanel>
             <Label Content="Main Window" HorizontalAlignment="Center" FontSize="35" Foreground="White" Margin="20"/>
             <Button Name="btn_Registration" Click="btn_Registration_Click" Content="Registration" Margin=" 60 50" Background="#545d6a" Foreground="White" FontSize="40"/>
-            <Button Name="btn_Login" Content="Login"  Margin="60 0" Background="#545d6a" Foreground="White" FontSize="40"/>
+            <Button Name="btn_Login" Content="Login" Click="btn_Login_Click" Margin="60 0" Background="#545d6a" Foreground="White" FontSize="40"/>
         </StackPanel>
     </Border>
 </Window>

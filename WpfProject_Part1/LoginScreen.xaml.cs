@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,29 +15,19 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace WpfProject_Part1
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginScreen : Window
     {
-        public MainWindow()
+        public LoginScreen()
         {
             InitializeComponent();
         }
-
-        private void btn_Registration_Click(object sender, RoutedEventArgs e)
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            RegScreen reg = new RegScreen();
-            reg.Show();
-        }
-
-        private void btn_Login_Click(object sender, RoutedEventArgs e)
-        {
-            LoginScreen login = new LoginScreen();
-            login.Show();
-
+            SqlConnection sqlCon = new SqlConnection();
+            
         }
     }
 }
