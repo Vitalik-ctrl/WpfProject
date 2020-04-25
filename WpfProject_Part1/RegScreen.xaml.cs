@@ -25,7 +25,7 @@ namespace WpfProject_Part1
 
         private void btnReg_Click(object sender, RoutedEventArgs e)
         {
-          
+            /// https://it-black.ru/rabota-s-bazoj-dannyh-v-ci_sharp/ --- полезная ссылка
         }
     }
 }

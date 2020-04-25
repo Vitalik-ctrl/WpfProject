@@ -26,6 +26,9 @@ namespace WpfProject_Part1
         }
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
+            ///Data Source =HOME-PC\SQLEXPRESS --- имя сервера
+            ///Initial Catalog=WPFprojectDB --- название базы данных
+
             SqlConnection sqlCon = new SqlConnection((@"Data Source =HOME-PC\SQLEXPRESS; Initial Catalog=WPFprojectDB; Integrated Security=True;"));
             try
             {
