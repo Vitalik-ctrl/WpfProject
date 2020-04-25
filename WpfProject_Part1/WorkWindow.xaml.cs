@@ -16,16 +16,13 @@ using System.Windows.Shapes;
 
 namespace WpfProject_Part1
 {
-    public partial class RegScreen : Window
+    public partial class WorkWindow : Window
     {
-        public RegScreen()
+        public WorkWindow()
         {
             InitializeComponent();
         }
-
-        private void btnReg_Click(object sender, RoutedEventArgs e)
-        {
-          
-        }
     }
 }
+
+

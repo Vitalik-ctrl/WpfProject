@@ -26,8 +26,36 @@ namespace WpfProject_Part1
         }
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection();
-            
+            SqlConnection sqlCon = new SqlConnection((@"Data Source =HOME-PC\SQLEXPRESS; Initial Catalog=WPFprojectDB; Integrated Security=True;"));
+            try
+            {
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+                String query = "SELECT COUNT(1) FROM tdb WHERE Username=@Username AND Password=@Password";
+                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+                sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Password);
+                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                if (count == 1)
+                {
+                    WorkWindow dashboard = new WorkWindow();
+                    dashboard.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Username or password is incorrect.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+
         }
     }
 }
