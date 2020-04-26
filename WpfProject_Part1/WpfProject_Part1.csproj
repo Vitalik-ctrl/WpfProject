@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EO.Pdf" Version="20.0.81" />
+    <PackageReference Include="Sitecore.FakeDb" Version="2.0.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
   </ItemGroup>
 

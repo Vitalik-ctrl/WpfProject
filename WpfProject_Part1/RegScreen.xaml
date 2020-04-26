@@ -24,8 +24,8 @@
         <Label Content="First name" Foreground="White" FontSize="20" Margin="20 0" />
         <TextBox Name="txtFirstName" Background="#545d6a" Foreground="White" FontSize="20" Margin="20 10 100 0"/>
         <Label Content="Email" Foreground="White" FontSize="20" Margin="20 0" />
-        <TextBox Name="Email" Background="#545d6a" Foreground="White" FontSize="20" Margin="20 10 100 0"/>
-        <Button Name="btn1" Content="Enter" Click="btnReg_Click" Margin="20 30 350 0" Background="#545d6a" Foreground="White" FontSize="20"/>
+        <TextBox Name="txtEmail" Background="#545d6a" Foreground="White" FontSize="20" Margin="20 10 100 0"/>
+        <Button Name="btn1" Content="Enter" Click="btn1_Click" Margin="20 30 350 0" Background="#545d6a" Foreground="White" FontSize="20"/>
         
         
 
